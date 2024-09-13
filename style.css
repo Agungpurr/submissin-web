@@ -1,0 +1,120 @@
+/* bagian umum */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2,
+h3 {
+  color: #8f14d1;
+}
+
+p {
+  text-indent: 2em;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #ad49e1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Bagian Header */
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #ad49e1;
+  background-image: repeating-radial-gradient(#7a1cac, #2e073f);
+  text-align: center;
+  color: black;
+}
+
+/* bagian navbar */
+nav {
+  background-color: #460863;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #5e0d8a;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  color: rgb(120, 48, 120);
+}
+
+/* pengaturan image */
+.featured-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.2s;
+  border-radius: 5px;
+}
+
+.featured-image:hover {
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Pengaturan Flexbox untuk layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1 1 70%;
+  padding: 20px;
+}
+
+aside {
+  flex: 1 1 30%;
+  padding: 10px;
+}
+
+/* Pengaturan footer */
+footer {
+  padding: 5px;
+  color: #5e0d8a;
+  background-color: #460863;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Pengaturan Responsive */
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+}
